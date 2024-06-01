@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css" />
+  <title>Authentication - CCN</title>
+</head>
+<body>
+  <div class="container">
+    <div class="forms-container">
+      <div class="signin-signup">
+        <form id="loginForm" class="sign-in-form">
+          <h2 class="title">AUTHENTICATION</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input id="username" type="text" placeholder="Your Full Name" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-heart"></i>
+            <input id="password" type="password" placeholder="Anniversary Date" required />
+          </div>
+          <input onclick="logIn()" type="submit" value="Login" class="btn solid" />
+          <!-- <p class="social-text">Or Login With</p>
+          <div class="social-media">
+            <a href="#" class="social-icon">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-google"></i>
+            </a>
+            <a href="#" class="social-icon">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div> -->
+        </form>
+        <form action="#" class="sign-up-form">
+          <h2 class="title">Reseting Your Brain</h2>
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Your Full Name" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-calendar-check"></i>
+            <input type="text" placeholder="Your Birth Date" required />
+          </div>
+          <div class="input-field">
+            <i class="fas fa-mars"></i>
+            <input type="text" placeholder="Azimas Birth Date" required />
+          </div>
+          <input onclick="showPopup()" type="submit" class="btn" value="RESET BRAIN" />
+          <p class="social-text">Or Reset your brain With</p>
+          <div class="social-media">
+            <a href="https://instagram.com/smithbondz" class="social-icon">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="panels-container">
+      <div class="panel left-panel">
+        <!-- <div class="content">
+          <h3>Forgot our Anniversary?</h3>
+          <p></p>
+          <button onclick="showPopup()" class="btn transparent" id="sign-up-btn"> Find Out! </button>
+        </div> -->
+        <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/Register.png" class="image" alt="" />
+      </div>
+      <div class="panel right-panel">
+        <div class="content">
+          <h3>Remember our Anniversary?</h3>
+          <p></p>
+          <button class="btn transparent" id="sign-in-btn"> IDENTIFICATION </button>
+        </div>
+        <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/Login.png" class="image" alt="" />
+      </div>
+    </div>
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <h2>!!!Warning!!!</h2>
+            <p>Your device has been takeover by Azimas because you have inputed incorrect Anniversary Date!</p>
+            <h2>APOLOGIZE TO HIM FOR YOUR SAFETY</h2>
+        </div>
+        <audio id="warningSound">
+            <source src="warning.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
