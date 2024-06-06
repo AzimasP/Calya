@@ -1158,7 +1158,7 @@ input, select, textarea {
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: url("../../images/universe.jpg");
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1285,10 +1285,10 @@ input, select, textarea {
 		#header > :first-child {
 			margin-top: 0;
 		}
-
-			#header > :first-child:before {
-				display: none;
-			}
+		.tangan{
+			color: cyan;
+			font-size: 50px;
+		}
 
 		#header .logo {
 			width: 5.5rem;
@@ -1322,6 +1322,13 @@ input, select, textarea {
 				padding: 3rem 2rem;
 				max-height: 40rem;
 				overflow: hidden;
+			}
+
+			#header .content .inner span{
+				color:aqua;
+				font-weight: 50px;
+				text-shadow: -2px 1px 17px rgba(0,53,207,1);
+
 			}
 
 				#header .content .inner > :last-child {
@@ -1441,8 +1448,8 @@ input, select, textarea {
 				}
 
 			#header .logo {
-				width: 4.75rem;
-				height: 4.75rem;
+				width: 12.75rem;
+				height: 12.75rem;
 				line-height: 4.75rem;
 			}
 
@@ -1546,7 +1553,7 @@ input, select, textarea {
 			position: relative;
 			width: 40rem;
 			max-width: 100%;
-			background-color: rgba(65, 159, 231, 0.85);
+			background-image: url("../../images/PAGE\ 1.jpg");
 			border-radius: 4px;
 			opacity: 0;
 		}
