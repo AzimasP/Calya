@@ -28,6 +28,7 @@ function logIn() {
     if (user) {
         window.location.href = 'gift.html';
     } else {
+        document.getElementById('warningSound').play();
         alert("GAGAL");
     }
 });
